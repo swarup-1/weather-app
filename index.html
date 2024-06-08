@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section1 display-mobile">
+            <div class="date">
+                <h3>January 2024</h3>
+                <p>Thursday, Jan 2024</p>
+            </div>
+            <div>
+                <input type="text" id="inputField" placeholder="Enter city">
+                <button onclick="submitValue()">Search</button>
+            </div>
+        </div>
+        <hr class="display-mobile">
+        <section class="left-block">
+            <div class="section1 display-desktop" >
+                <div class="date">
+                    <h3>January 2024</h3>
+                    <p>Thursday, Jan 2024</p>
+                </div>
+                <div>
+                    <input type="text" id="inputField" placeholder="Enter city">
+                    <button onclick="submitValue()">Search</button>
+                </div>
+            </div>
+            <hr>
+            <div class="section2">
+                <h3>Today Overview</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/wind.svg" alt="logo">
+                        <div>
+                            <h3>Wind Speed</h3>
+                            <h4 id="wind">...</h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/raining.svg" alt="logo">
+                        <div>
+                            <h3>Rain Chances</h3>
+                            <h4>24%</h4> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/pressure.svg" alt="logo">
+                        <div>
+                            <h3>Pressure</h3>
+                            <h4 id="pressure">...</h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/humidity.svg" alt="logo">
+                        <div>
+                            <h3>Humidity</h3>
+                            <h4 id="humidity">...</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="section3">
+                <h3>Weekly Forecast</h3>
+                <div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="right-block">
+            <div class="r1">
+                <div class="location">
+                    <p id="city">...</p>
+                    <h3 id="country">...</h3>
+                </div>
+                <div id="time">00:00 PM</div>
+            </div>
+            <div class="r2">
+                <div class="temprature">
+                    <img src="./assets/cloudy.svg" alt="icon">
+                    <h1 id="temp">... °C</h1>
+                </div>
+                <h3 id="weather">...</h3>
+            </div>
+            <hr>
+            <h2>Today's Forecast</h2>
+            <div class="r3">
+                <div>
+                    <p class="time">00:00</p>
+                    <p class="temp">00.00 °C</p>
+                    <p class="type">...</p>
+                </div>
+            </div>
+            <hr>
+            <h2>Sunrise & Sunset</h2>
+            <div class="card sunrise">
+                <img src="./assets/sunrise.svg" alt="logo">
+                <div class="title">
+                    <h4>Sunrise</h4>
+                    <h3>4:40 AM</h3>
+                </div>
+                <p class="compare-time">4 Hours</p>
+            </div>
+            <div class="card sunset">
+                <img src="./assets/sunset.svg" alt="logo">
+                <div class="title">
+                    <h4>Sunset</h4>
+                    <h3>5:50 PM</h3>
+                </div>
+                <p class="compare-time">4 Hours</p>
+            </div>
+        </section>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
