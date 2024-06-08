@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function submitValue() {
-    let city = document.getElementById('inputField').value || obj.city;
+    let city = document.querySelector('.display-desktop #inputField').value || document.querySelector('.display-mobile #inputField').value || obj.city;
     let date = new Date();
     fetch((obj.lat && obj.lon && !city) ? `${baseURL}/data/2.5/weather?lat=${obj.lat}&lon=${obj.lon}&units=metric&appid=${apiKey}` : `${baseURL}/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
         .then(response => response.json())
